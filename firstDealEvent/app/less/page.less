@@ -1,11 +1,12 @@
 img,object{max-width:100%; height:auto; width:auto\9; /* ie8 */ *width: 100%;/* ie6 */-ms-interpolation-mode: bicubic;}
 html,body,div,p,ul,li,dl,dt,dd,h1,h2,h3,h4,h5,h6,form,input,select,button,textarea,iframe,table,th,td{margin:0;padding:0}
+@glcolor:red;
 @dpcolor:#ff8200;
 .newuser{
 	list-style: none;
 	.btn-list{
 		background-color: black;
-		height: 100px;
+		font-size: 0px;
 		text-align: center;
 		.first-btn{
 			color: white;
@@ -41,10 +42,9 @@ html,body,div,p,ul,li,dl,dt,dd,h1,h2,h3,h4,h5,h6,form,input,select,button,textar
 			-webkit-box-sizing:border-box;			
 			.line-one{
 				color: #666;
-				padding-bottom: 10px;
-				white-space:nowrap;
-				overflow: hidden;
-				text-overflow:ellipsis;
+				padding-bottom: 15px;
+				word-wrap: break-word;
+		
 			}
 			.line-two{
 				position: relative;
@@ -55,19 +55,21 @@ html,body,div,p,ul,li,dl,dt,dd,h1,h2,h3,h4,h5,h6,form,input,select,button,textar
 					left:0px;
 					font-size: 18px;
 				}
-				color: @dpcolor;
-				font-size: 40px;
-			}
-			.line-three{
+				.line-three{
 				margin-top: 5px;
 				color: #bbb;
+				font-size: 14px;
 				text-decoration: line-through;
 
+				}
+				color: @glcolor;
+				font-size: 40px;
 			}
+			
 		}
 		.buynow{
 			position: absolute;
-			background-color: @dpcolor;
+			background-color: @glcolor;
 			padding: 5px 15px;
 			text-decoration: none;
 			color:white;
@@ -83,20 +85,48 @@ html,body,div,p,ul,li,dl,dt,dd,h1,h2,h3,h4,h5,h6,form,input,select,button,textar
 		letter-spacing: 1px;
 		background-color: #eee;
 	}
-	.words-list{
+	.words-list1{
 		padding:15px;
 		letter-spacing: 1px;
 		font-size: 13px;
 		color:#777;
 		line-height: 20px;
-		.backtotop{
-			margin: 15px 30px;
+	.sendBtn{
+			font-size: 20px;
+			letter-spacing: 2px;
 			text-align: center;
-			font-size: 16px;
-			padding:10px;
-			border:@dpcolor 1px solid;
-			border-radius: 3px;
-			color:@dpcolor;
+			color: white;
+			background-color: @dpcolor;
+			padding:15px;
+			margin:10px 0px;
+			border-radius: 5px;
+		}
+	}
+	.words-list2{
+		padding:15px;
+		letter-spacing: 1px;
+		font-size: 16px;
+		color:#bbb;
+		line-height: 20px;
+		.sendBtn{
+			font-size: 20px;
+			letter-spacing: 2px;
+			text-align: center;
+			color: white;
+			background-color: @dpcolor;
+			padding:15px;
+			margin:10px 0px;
+			border-radius: 5px;
+		}
+	}
+	.words-list3{
+		padding:15px;
+		letter-spacing: 1px;
+		font-size: 16px;
+		color:#666;
+		line-height: 25px;
+		.ora{
+			color:@glcolor;
 		}
 	}
 }
