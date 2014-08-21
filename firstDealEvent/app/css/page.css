@@ -160,3 +160,41 @@ td {
 .newuser .words-list3 .ora {
   color: #ff0000;
 }
+.popbox {
+  display: none;
+  z-index: 9999;
+  background-color: white;
+  border-radius: 5px;
+  width: 250px;
+}
+.popbox .title {
+  font-weight: bolder;
+  padding-top: 15px;
+  text-align: center;
+}
+.popbox .content {
+  text-indent: 20px;
+  padding: 10px 15px;
+}
+.popbox .btn {
+  border-top: 1px solid #bbb;
+  text-align: center;
+  height: 40px;
+  line-height: 40px;
+  color: #119DFA;
+}
+.popbox .j-back {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  width: 50%;
+  float: left;
+  border-right: 1px solid #bbb;
+}
+.popbox .j-update {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  width: 50%;
+  float: left;
+}
