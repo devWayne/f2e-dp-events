@@ -1,0 +1,33 @@
+ {
+  "name": "first-deal-free",
+  "version": "0.0.3",
+  "description": "new user first deal free",
+  "main": "index.js",
+  "repository": "git@code.dianpingoa.com:zhiqiang.cao/first-deal-free.git",
+  "keywords": [
+    "app"
+  ],
+  "license": "MIT",
+  "author": {
+    "name": "zhiqiang.cao",
+    "email": "zhiqiang.cao@dianping.com"
+  },
+  "bugs": {
+    "url": "http://code.dianpingoa.com/zhiqiang.cao/first-deal-free"
+  },
+  "homepage": "http://code.dianpingoa.com/zhiqiang.cao/first-deal-free",
+
+  "dependencies": {
+    "zepto-wepp": "~1.1.3",
+    "wepp-module-toast": "~0.1.0",
+    "wepp-module-overlay": "~0.1.0",
+    "wepp-module-event": "~0.2.1",
+    "cookie": "~0.1.0"
+  },
+  "directories": {
+    "css": "css/"
+  },
+  "entries": [
+    "./js/*.js"
+  ]
+}
